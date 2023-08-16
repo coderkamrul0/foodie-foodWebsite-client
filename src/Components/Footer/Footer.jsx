@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-        <div className=" bg-[#00A850] py-3 text-white">
+        <div className=" bg-[#181818] border-t border-gray-500 py-3 text-white">
             <div className="max-w-screen-xl mx-auto md:flex justify-between">
             <p>Copyright © 2023 Foodie. All Rights Reserved.</p>
             <img src={footerPayment} alt="" />
