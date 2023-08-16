@@ -1,0 +1,62 @@
+[
+    {
+      "customer_name": "Alice",
+      "customer_image": "https://i.ibb.co/25X5bYv/photo-1450297350677-623de575f31c.jpg",
+      "rating": 4.5,
+      "description": "The food was delicious! I especially loved the pasta dish."
+    },
+    {
+      "customer_name": "Bob",
+      "customer_image": "https://i.ibb.co/mzpbRBf/man1.jpg",
+      "rating": 4.8,
+      "description": "The burger was good, but the fries were a bit too salty for my taste."
+    },
+    {
+      "customer_name": "Catherine",
+      "customer_image": "https://i.ibb.co/JFHsnyw/images.jpg",
+      "rating": 5.0,
+      "description": "Absolutely amazing experience. The sushi was fresh and beautifully presented."
+    },
+    {
+      "customer_name": "David",
+      "customer_image": "https://i.ibb.co/Hh81DWQ/man5.jpg",
+      "rating": 4.5,
+      "description": "The steak was cooked to perfection, and the service was top-notch."
+    },
+    {
+      "customer_name": "Emily",
+      "customer_image": "https://i.ibb.co/gFf6HvS/photo-1620117654333-c125fef82817.jpg",
+      "rating": 4.5,
+      "description": "Disappointing. The pizza arrived cold, and the cheese was rubbery."
+    },
+    {
+      "customer_name": "Frank",
+      "customer_image": "https://i.ibb.co/LJZMT3D/man4.jpg",
+      "rating": 4.7,
+      "description": "Exquisite flavors in every bite. The dessert menu was a delight as well."
+    },
+    {
+      "customer_name": "Grace",
+      "customer_image": "https://i.ibb.co/rb4BjxS/man3.jpg",
+      "rating": 4.0,
+      "description": "The vegetarian options were diverse and flavorful. I'm impressed!"
+    },
+    {
+      "customer_name": "Henry",
+      "customer_image": "https://i.ibb.co/gFf6HvS/photo-1620117654333-c125fef82817.jpg",
+      "rating": 4.0,
+      "description": "Decent experience overall, but the portion sizes left me wanting more."
+    },
+    {
+      "customer_name": "Isabella",
+      "customer_image": "https://i.ibb.co/JFHsnyw/images.jpg",
+      "rating": 5.0,
+      "description": "I can't get over how good the coffee is here. A must-visit for coffee enthusiasts!"
+    },
+    {
+      "customer_name": "Jack",
+      "customer_image": "https://i.ibb.co/rb4BjxS/man3.jpg",
+      "rating": 4.5,
+      "description": "Fresh ingredients and bold flavors in every dish. The ambiance was lovely too."
+    }
+  ]
