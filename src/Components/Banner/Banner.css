@@ -1,0 +1,19 @@
+.bannerBgOne {
+  background: rgb(115, 71, 42);
+  background: radial-gradient(
+    circle,
+    rgba(115, 71, 42, 1) 0%,
+    rgba(116, 67, 34, 1) 35%,
+    rgba(65, 34, 13, 1) 100%
+  );
+}
+
+.bannerBgTwo {
+  background: rgb(82, 122, 26);
+  background: radial-gradient(
+    circle,
+    rgba(82, 122, 26, 1) 0%,
+    rgba(82, 122, 26, 1) 35%,
+    rgba(46, 70, 12, 1) 100%
+  );
+}
