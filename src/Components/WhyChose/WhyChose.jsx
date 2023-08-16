@@ -6,7 +6,7 @@ const WhyChose = () => {
     return (
         <div className='bg-[#00A149]'>
             <div className='max-w-screen-xl mx-auto py-14'>
-                <div className='flex justify-between'>
+                <div className='grid grid-cols-2  md:grid-cols-4  gap-2 justify-between'>
                     <div className='px-6'>
                     <div className='flex gap-3 pb-3'>
                         <FaShippingFast className='text-[#FFC222]' size={30}/>

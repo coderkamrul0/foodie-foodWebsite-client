@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FaShoppingBasket } from "react-icons/fa";
+import { useCart } from "../../hooks/CartContext";
 
 
 const FoodCard = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const {addToCart} = useCart();
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -12,6 +14,8 @@ const FoodCard = ({ item }) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  
 
   return (
     <div className="border p-3 rounded-xl">
@@ -26,14 +30,14 @@ const FoodCard = ({ item }) => {
           <img
             src={item.image}
             alt=""
-            className="w-full h-auto transition-transform duration-300 transform scale-100 hover:scale-110"
+            className="w-full h-auto transition-transform duration-300 transform hover:scale-110"
           />
         </div>
         <h5 className="font-bold pt-2">{item.foodName}</h5>
         <p className="text-slate-500 text-sm py-2">{item.description.slice(0, 50)}</p>
         <div className="flex justify-between items-center">
           <p className="text-yellow-500 font-bold text-2xl">${item.price}</p>
-          <button className="bg-yellow-500 text-black p-2 rounded-lg"><FaShoppingBasket size={20}/></button>
+          <button onClick={()=>addToCart(item._id)} className="bg-yellow-500 text-black p-2 rounded-lg"><FaShoppingBasket size={20}/></button>
         </div>
       </div>
     </div>

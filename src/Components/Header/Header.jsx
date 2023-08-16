@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { FaBars, FaCartPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import MenuDropdown from "../MenuDropdown/MenuDropdown";
+import { useCart } from "../../hooks/CartContext";
 
 const Header = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const handleMobileNavToggle = () => {
     setMobileNavOpen(!mobileNavOpen);
   };
+  const {cartItems} = useCart();
 
   return (
     <div className="bg-[#00A149] text-white">
@@ -26,7 +28,7 @@ const Header = () => {
           <div className="flex justify-between items-center gap-4">
             <Link to={"/cart"} className="relative">
               <FaCartPlus className="border-2 p-1 rounded-full" size={30} />
-              <small className="absolute top-4 left-4 bg-white text-black font-bold w-[20px] h-[20px] rounded-full flex justify-center items-center">10</small>
+              <small className="absolute top-4 left-4 bg-white text-black font-bold w-[20px] h-[20px] rounded-full flex justify-center items-center">{cartItems.length}</small>
             </Link>
             <MenuDropdown />
           </div>
@@ -40,7 +42,7 @@ const Header = () => {
           <div className="flex items-center gap-4 list-none">
           <Link to={"/cart"} className="relative">
               <FaCartPlus className="border-2 p-1 rounded-full" size={30} />
-              <small className="absolute top-4 left-4 bg-white text-black font-bold w-[20px] h-[20px] rounded-full flex justify-center items-center">10</small>
+              <small className="absolute top-4 left-4 bg-white text-black font-bold w-[20px] h-[20px] rounded-full flex justify-center items-center">{cartItems.length}</small>
             </Link>
             <MenuDropdown />
           </div>

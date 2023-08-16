@@ -13,6 +13,7 @@ import AddAItem from "../Pages/Dashboard/AddAItem/AddAItem";
 import AllFoods from "../Pages/Dashboard/AllFoods/AllFoods";
 import UpdateFood from "../Pages/Dashboard/UpdateFood/UpdateFood";
 import OrderHistory from "../Pages/Dashboard/OrderHistroy/OrderHistory";
+import Cart from "../Pages/Cart/Cart";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact/>
+            },
+            {
+                path: '/cart',
+                element: <Cart/>
             },
             {
                 path: '/login',
