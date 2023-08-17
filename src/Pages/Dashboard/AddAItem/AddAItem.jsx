@@ -20,7 +20,7 @@ const AddAItem = () => {
       const image = data.data.display_url;
       const foodData = {foodName, image,foodQuantity, rating, description, foodCategory, price, }
       console.log(foodData);
-      fetch('http://localhost:5000/allFoods', {
+      fetch('https://foodie-server-three.vercel.app/allFoods', {
         method: 'POST',
         headers: {
           'content-type': 'application/json'

@@ -51,7 +51,7 @@ const Header = () => {
           <div className="md:hidden bg-white text-black">
             <div className="flex flex-col gap-2 mx-5">
               <Link to={"/"}>Home</Link>
-              <Link to={"/"}>Shop</Link>
+              <Link to={"/shop"}>Shop</Link>
               <Link to={"/"}>About</Link>
               <Link to={"/"}>Blog</Link>
               <Link to={"/"}>Contact</Link>

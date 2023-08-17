@@ -4,7 +4,7 @@ import FoodCard from '../FoodCard/FoodCard';
 const PopularFood = () => {
     const [allFood, setAllFood] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allfoods')
+        fetch('https://foodie-server-three.vercel.app/allfoods')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

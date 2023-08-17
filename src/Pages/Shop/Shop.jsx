@@ -9,7 +9,7 @@ const Shop = () => {
     const [sortOrder, setSortOrder] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5000/allfoods')
+        fetch('https://foodie-server-three.vercel.app/allfoods')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

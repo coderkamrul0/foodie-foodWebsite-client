@@ -55,7 +55,6 @@ export default function Example() {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <Link to={"/"}>
                         <button
                           onClick={handleLogOut}
                           className={`${
@@ -64,7 +63,6 @@ export default function Example() {
                         >
                           Logout
                         </button>
-                      </Link>
                     )}
                   </Menu.Item>
                 </div>
@@ -72,7 +70,7 @@ export default function Example() {
                 <div className="px-1 py-1 ">
                   <Menu.Item>
                     {({ active }) => (
-                      <Link to={"/"}>
+                      <Link to={"/cart"}>
                         <button
                           className={`${
                             active ? "bg-[#FFC222] text-white" : "text-gray-900"
@@ -98,7 +96,6 @@ export default function Example() {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <Link to={"/"}>
                         <button
                           onClick={handleLogOut}
                           className={`${
@@ -107,7 +104,6 @@ export default function Example() {
                         >
                           Logout
                         </button>
-                      </Link>
                     )}
                   </Menu.Item>
                 </div>
