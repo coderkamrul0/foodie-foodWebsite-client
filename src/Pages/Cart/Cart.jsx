@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useCart } from "../../hooks/CartContext";
 import useAuth from "./../../hooks/useAuth";
 import { FaWindowClose } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
   const [allFood, setAllFood] = useState([]);
@@ -79,6 +80,9 @@ const Cart = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Foodie | My Cart</title>
+      </Helmet>
       <div className="max-w-screen-xl mx-auto">
         <h1 className="text-center font-bold text-5xl py-7">My Cart</h1>
         <div className="md:flex justify-between flex-col-reverse md:flex-row">
@@ -172,7 +176,7 @@ const Cart = () => {
                   <input
                     type="text"
                     id="name"
-                    value={user.displayName}
+                    value={user?.displayName}
                     className="w-full border rounded p-2"
                   />
                 </div>
@@ -194,7 +198,7 @@ const Cart = () => {
                   <input
                     type="text"
                     id="email"
-                    value={user.email}
+                    value={user?.email}
                     className="w-full border rounded p-2"
                   />
                 </div>

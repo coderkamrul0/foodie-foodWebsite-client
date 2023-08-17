@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import './App.css';
 import AboutFood from './Components/AboutFood/AboutFood';
 import Banner from './Components/Banner/Banner';
@@ -11,6 +12,9 @@ import HomeMenu from './Components/homeMenu/homeMenu';
 function App() {
   return (
     <div>
+      <Helmet>
+        <title>Foodie | Home</title>
+      </Helmet>
       <Banner/>
       <HomeMenu/>
       <Delivery/>
